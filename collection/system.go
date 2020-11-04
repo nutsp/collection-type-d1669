@@ -1,23 +1,12 @@
 package collection
 
-// System ...
-type System struct {
-	ID   int
-	Type string
-}
-
-// SystemCollection ...
-type SystemCollection struct {
-	Queue        System
-	Direct       System
-	BackupSystem System
+var systemType = map[int]string{
+	1: "queue",
+	2: "direct",
+	3: "backup_system",
 }
 
 // SystemType ...
-func SystemType() SystemCollection {
-	return SystemCollection{
-		Queue:        System{ID: 1, Type: "queue"},
-		Direct:       System{ID: 2, Type: "direct"},
-		BackupSystem: System{ID: 3, Type: "backup_system"},
-	}
+func SystemType(systemTypeID int) string {
+	return systemType[systemTypeID]
 }
