@@ -12,5 +12,5 @@ var agentType = map[int]string{
 
 // AgentType ....
 func AgentType(agentTypeID int) string {
-	return actionType[agentTypeID]
+	return agentType[agentTypeID]
 }
