@@ -6,8 +6,8 @@ var agentType = map[int]string{
 	3: "Coordinator",
 	4: "Dispatcher",
 	5: "Supervisor",
-	7: "Call Taker and Non Emergency Swarm",
-	8: "Coordinator and Dispatcher Swarm",
+	6: "Call Taker and Non Emergency Swarm",
+	7: "Coordinator and Dispatcher Swarm",
 }
 
 // AgentType ....
